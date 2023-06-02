@@ -1,0 +1,7 @@
+{
+  "FIELD_REQUIRED":"This field is required",
+  "INVALID_FIELD":"Enter valid data",
+  "DATA_UPDATED":"data updated successfully",
+  "DELETE":"Are you sure you want to delete",
+  "EMAIL_EXIST":"Already email are exist"
+}

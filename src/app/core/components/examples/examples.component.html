@@ -1,0 +1,40 @@
+<H1>PIPES</H1>
+<h2>upper and lower case pipe</h2>
+<p> upper case pipe : {{NAME| uppercase}}</p>
+<p> lower case pipe : {{NAME| lowercase}}</p>
+<h2>datepipe</h2>
+<p> date format pipe for 'short' :{{today|date:'short'}}</p>
+<p> date format pipe for 'shortDate' :{{today|date:'shortDate'}}</p>
+<p> date format pipe for 'medium' :{{today|date:'medium'}}</p>
+<p> date format pipe for 'mediumDate' :{{today|date:'mediumDate'}}</p>
+<p> date format pipe for 'long' :{{today|date:'long'}}</p>
+<p> date format pipe for 'full' :{{today|date:'full'}}</p>
+<h2>currency pipe(code and symbol)</h2>
+<p>currency format pipe for 'INR' :{{money|currency:'INR'}}</p>
+<p>currency format pipe for 'USD' :{{money|currency:'USD'}}</p>
+<p>currency format pipe for 'AUD' :{{money|currency:'AUD'}}</p>
+<p>currency format pipe for 'AUD' :{{money|currency:'AUD':'code'}}</p>
+<p>currency format pipe for 'AUD' :{{money|currency:'AUD':'symbol'}}</p>
+<p>currency format pipe for 'CLP(CENTS)' :{{money|currency:'CLP'}}</p>
+<h2>digits pipe(converting decimal to whole number)</h2>
+<P>digit format pipe for number: {{value|number:'1.0-0'}}</P>
+<h2>percent pipe</h2>
+<P>percent format pipe for number: {{value|percent}}</P>
+<mat-divider></mat-divider>
+<h1>Snackbar</h1>
+<button mat-raised-button color="primary" (click)="Snackbar()">Submit</button>
+<mat-divider></mat-divider>
+<h1>directives</h1>
+<h2>attribite directives</h2>
+<h3>ngclass</h3>
+<div [ngClass]="special?'special':'not special'">
+  <p>special div </p>
+</div>
+<mat-divider></mat-divider>
+<h3>ng style</h3>
+<div [ngStyle]="textStyle"> ng style for text</div>
+<mat-divider></mat-divider>
+
+
+
+

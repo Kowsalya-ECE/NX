@@ -1,0 +1,62 @@
+.menu-spacer 
+{
+  flex: 0.6 1 auto;
+}
+.little a{
+  color: white;
+  font-size: 16px;
+  width: fit-content;
+  font-weight:500; 
+  text-decoration: none;
+
+}
+a:hover
+{
+  color: orangered;
+  border-bottom:2px solid gray;
+}
+a #underline
+{
+  color: orangered;
+  // border-bottom: 2px solid gray;
+}
+.little
+{
+  display: flex; 
+  justify-content: space-evenly;
+  // gap:40px; 
+  width: 80%;
+}
+.tit{
+  margin-left:40px;
+  font-weight: bold;
+  color: white;
+  font-size: medium;
+}
+.bar
+{
+  display: flex;
+  flex-direction: column;
+}
+mat-icon{
+  color: gray;
+}
+mat-icon:hover
+{
+  color: orangered;
+}
+.active
+{
+  background-color: black;
+  color: white;
+}
+.inactive
+{
+  background-color: blue;
+  color: white;
+}
+.button_color
+{
+  background-color:black !important;
+  color: white;
+}

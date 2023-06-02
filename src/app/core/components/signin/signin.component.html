@@ -1,0 +1,44 @@
+<div class="page-container" fxLayout="row" fxLayoutAlign="center">
+  <div class="signin" fxLayout="column" fxLayoutAlign="center" fxFlex="30%">
+    <div fxLayoutAlign="center">
+      <form [formGroup]="signinform">
+        <h1 fxLayoutAlign="center"><b>signIn </b></h1>
+        <div fxLayoutGap="5%" fxLayout.lt-md="column">
+          <mat-label fxFlex="30%">Name</mat-label>
+          <mat-form-field appearance="outline" fxFlex="70%">
+            <input matInput type="text" formControlName="Name" placeholder="enter your name">
+            <mat-error *ngIf="signinform?.get('Name')?.hasError('required')">
+              {{(messages|async)?.FIELD_REQUIRED}}
+            </mat-error>
+          </mat-form-field> 
+        </div>
+        <div fxLayoutGap="5%" fxLayout.lt-md="column">
+          <mat-label fxFlex="30%">Email</mat-label>
+          <mat-form-field appearance="outline" fxFlex="70%">
+            <input matInput type="text" formControlName="Email" placeholder="enter your Email">
+            <mat-error *ngIf="signinform?.get('Email')?.hasError('required')">
+              {{(messages|async)?.FIELD_REQUIRED}}
+             </mat-error>
+            <mat-error *ngIf="signinform?.get('Email')?.hasError('pattern')">
+            {{(messages|async)?.INVALID_FIELD}}
+            </mat-error>
+          </mat-form-field>
+        </div>
+
+        <div fxLayoutGap="5%" fxLayout.lt-md="column">
+          <mat-label fxFlex="30%">password</mat-label>
+          <mat-form-field appearance="outline" fxFlex="70%">
+            <input matInput type="password" formControlName="password" placeholder="enter your password">
+            <mat-error *ngIf="signinform?.get('password')?.hasError('required')">
+              {{(messages|async)?.INVALID_FIELD}}
+            </mat-error>
+          </mat-form-field>
+        </div>
+
+        <div fxLayoutAlign="center">
+          <button mat-raised-button color="primary" (click)="signin()" >signin</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <router-outlet></router-outlet>

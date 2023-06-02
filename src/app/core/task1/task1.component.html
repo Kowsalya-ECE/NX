@@ -1,0 +1,83 @@
+<div fxLayoutAlign="center" class="body" ngStyle.lt-md="background-color:gainsboro;">
+    <div fxLayoutAlign="center" fxLayout.lt-md="column" class="box">
+        
+        <div class="subbox1" fxFlexOrder="1" ngStyle.lt-md="width: 100%;margin:25px 10px 0px 0px;" fxFlexOrder.lt-md="2" fxFlex.sm="100">
+            <div class="icon"> 
+                <span class= "dot">.</span>
+            </div>
+            <div class="para"><p>Let us help you run your<br><br>freelance business.</p>
+            <p class="para1">Our registration process is quick and easy, taking
+                no more than 10 minutes to complete
+            </p></div>    
+
+                <div class="slide" *ngIf="slide==1"> 
+                  <p>I'm impressed with the results I've seen since starting to use this product,
+                   I begin receiving clients  and projects in the first week.
+                   </p>
+                  <div fxLayoutAlign="start center" class="s1">
+                      <div>
+                          <img src="/assets/task1.pngew/task1.png" alt="">
+                     </div>
+                     <div class="info1">
+                        <p>KOWSALYA.A<br>Product Designer</p>
+                     </div></div></div>
+                     <div class="slide" *ngIf="slide==2"> 
+                        <p>I'm impressed with the results I've seen since starting to use this product,
+                         I begin receiving clients  and projects in the first week.
+                         </p>
+                        <div fxLayoutAlign="start center" class="s1">
+                            <div>
+                                <img src="../../../assets/pic3.jpeg" alt="">
+                           </div>
+                           <div class="info1">
+                              <p>Vaishnavi.V<br>Manager</p>
+                           </div></div></div>
+
+                           <div class="slide" *ngIf="slide==3"> 
+                            <p>I'm impressed with the results I've seen since starting to use this product,
+                             I begin receiving clients  and projects in the first week.
+                             </p>
+                            <div fxLayoutAlign="start center" class="s1">
+                                <div>
+                                    <img src="../../../assets/pic2.jpeg" alt="">
+                               </div>
+                               <div class="info1">
+                                  <p>Gowthami.V<br>Developing Dept</p>
+                               </div></div>
+                            </div>
+
+                           <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="5px" class="btn">
+                            <button (click)="onclickbtn(1)"></button>
+                            <button (click)="onclickbtn(2)"></button>
+                            <button (click)="onclickbtn(3)"></button>
+                           </div>
+        </div>
+
+        
+        <div class="subbox2" fxFlexOrder="2" fxFlexOrder.lt-md="1" fxFlex="50" fxFlex.sm="100">
+           <!-- <div fxFlex="90%" fxLayout="column"> -->
+            <span class="get">Get Started</span>
+           <p class="account">Create your account now</p>
+
+           <mat-label >Full name</mat-label><br>
+           <input placeholder="Enter your name" value="kowsalya"><br><br>
+
+           <mat-label >Email</mat-label><br>
+           <input placeholder="Enter your mail id" value="kowsalya@gmail.com" >
+            <br><br>  
+
+            <mat-label>Password <span class="span">strong!</span></mat-label>
+            <input name="password" [type]="showPasswordOnPress ? 'text' : 'password'"
+            class="form-control pwd-control" id="password-field" placeholder="Password" value="........">
+            <br><br>  
+
+            <button mat-raised-button color="primary" class="box2btn"><a href="#">Sign Up</a></button>    
+            <br><br>
+            <span class="login">
+            <p ><span>Have an account?</span><a routerLink="/task2">Login</a><p>     
+            </span>
+           </div>
+            
+        </div>   
+    </div>
+<!-- </div> -->

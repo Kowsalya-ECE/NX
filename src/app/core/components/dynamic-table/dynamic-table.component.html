@@ -1,0 +1,36 @@
+<div classs="table-container">
+  <div class="mat-elavation-z8">
+    <table mat-table [dataSource]="dataSource" matSort>
+      <div  *ngFor="let value of htmlref">
+        <ng-container *ngIf="value.headingRef!='Action' && value.headingRef!='symbol'" [matColumnDef]="value.headingRef">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>{{value.heading}}</th>
+          <td mat-cell *matCellDef="let element">{{element[value.headingRef]}}</td>
+        </ng-container>
+        
+        <ng-container  *ngIf="value.headingRef=='Action'" [matColumnDef]="value.headingRef">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>{{value.heading}}</th>
+          <td mat-cell *matCellDef="let element">
+            <mat-icon *ngFor="let item of icon">{{item.iconName}}</mat-icon>
+          </td>
+        </ng-container>
+        <ng-container  *ngIf="value.headingRef=='symbol'" [matColumnDef]="value.headingRef">
+          <th mat-header-cell *matHeaderCellDef>
+           <button (click)="addEmpDetails()"><mat-icon>{{details}}</mat-icon>{{message}}</button>
+          </th>
+        </ng-container>
+
+        <!-- <ng-container  *ngIf="show1" [matColumnDef]="value.headingRef">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>{{value.heading}}</th>
+          <td mat-cell *matCellDef="let element">
+            <mat-icon *ngFor="let item of empdetail">{{item.headingRef}}</mat-icon>
+          </td>
+        </ng-container> -->
+ 
+      </div>
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+    </table>
+    <mat-paginator [pageSizeOptions]="[5,10,15]" showFirstLastButtons></mat-paginator>
+  </div>
+</div>

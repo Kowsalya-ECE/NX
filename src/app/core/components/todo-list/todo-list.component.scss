@@ -1,0 +1,32 @@
+.container{
+  height: 80vh;
+  width: 100%;
+}
+.container .span1{
+  // border:2px solid;
+  font-size: 17px;
+  position: relative;
+  left: 51px;
+  height: 40px;
+  background-color: purple;
+  padding: 0px 20px;
+ 
+}
+.container .span2{
+  font-size: 17px;
+  position: relative;
+  left: -80px;
+  height: 40px;
+  background-color: purple;
+  padding: 0px 10px;
+}
+.inputbox{
+  height: 40px;
+  width: 250px;
+  font-size: 17px;
+  border-radius: 0px;
+  border: none;
+  border: 1px solid rgb(197,190,190);
+  padding-left: 60px;
+  padding-right: 140px;
+}

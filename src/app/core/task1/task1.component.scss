@@ -1,0 +1,174 @@
+.body
+ {
+    // width: 100%;
+    // height: 100%;
+   background-color: gainsboro;
+     padding: 40px;
+}
+.box
+{
+    width: 60%;
+    height:fit-content;
+    padding: 10px 0;
+    background-color:white;
+    border-radius: 10px;
+}
+.box .subbox1{
+    width: 80%;
+    height: 100%;
+    border-radius: 10px;
+}
+.subbox2{
+    width: 80%;
+    height: 100%;
+    padding: 25px;
+
+}
+.subbox1
+{
+    background-color: #f3f5f9;
+    margin-left: 10px;   
+}  
+
+.subbox1 p
+{
+font-size: 25px;
+font-weight: 500;
+margin-top:30px;
+margin-left: 30px;
+}
+.para
+{
+    margin-top: 70px;
+    margin-right: 10px;
+}
+.info1 p 
+{
+margin-top: 0px;
+margin-left: 10px;
+}
+.s1
+{
+  padding-left: 25px;
+}
+.para .para1
+{
+    font-size: 13px;font-weight:400;color: gray;
+}
+// .subbox2 
+// {
+//     // padding: 60px 40px ;
+// }
+.slide{
+
+    background-color:rgb(58, 59, 66);
+    border-radius: 10px;
+    width: 90%;
+    height: 25%;
+    margin-left: 18px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+.slide p
+{   
+    padding-top: 13px;
+    padding-left: -20px;
+    font-size: 13px;
+    width: fit-content;
+    font-weight: normal;
+    color: #f3f5f9;
+}
+.login
+{
+    display: flex;
+    justify-content: center;
+}
+img
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+}
+.span
+{
+    margin-left: 10px;
+    color: green;
+}
+.dot{
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    margin-top: -13px;
+    margin-left: 4px;
+}
+.icon
+{
+    height: 18px;
+    width: 18px;
+    background-color: blue;
+    border-radius: 5px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+mat-label
+{
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(129, 126, 126, 0.815);
+    // line-height: 12px;
+}
+input
+{
+
+    width: 80%;
+    height: 38px; 
+    border: gainsboro 1px solid; 
+    border-radius: 5px;
+}
+button
+{
+   width: 102%;
+    height : 39px;
+}
+.login span
+{
+    color: rgba(129, 126, 126, 0.815);
+    font-weight: 500;
+}
+.login a
+{
+  color: blue;
+  text-decoration: none;
+}
+button, a
+{
+    color: white;text-decoration: none;
+}
+.get
+{
+    font-size: 22px;
+    font-weight: bold;
+}
+.account
+{
+    font-size:13px;
+    font-weight: 500;
+    color: rgba(184, 181, 181, 0.815);
+}
+.btn button
+{
+    width: 10px;
+    height: 7px;
+    border-radius: 50%;
+    margin-bottom: 10px;  
+    border-color: rgb(216,207,207);
+    background-color: rgb(216, 207, 207);
+}
+.btn button:hover
+{
+    background-color: blue;
+}
+.box2btn
+{
+    width: 80%;
+}

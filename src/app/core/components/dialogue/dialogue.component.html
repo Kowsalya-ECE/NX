@@ -1,0 +1,19 @@
+<h1 mat-dialog-title>
+{{htmlvari.header}}
+</h1>
+<div *ngIf="htmlvari?.header!='error'" mat-dialog-content>
+  <div [innerHTML]="htmlvari?.content"></div>
+</div>
+<div mat-dialog-actions fxLayoutAlign="end">
+  <ng-container *ngIf="htmlvari?.Action == 'symbol'">
+    <button mat-raised-button [mat-dialog-close]="false">NO</button>
+    <button mat-raised-button color="primary" [mat-dialog-close]="true">YES</button>
+  </ng-container>
+  <ng-container *ngIf="htmlvari?.Action=='close'">
+    <button mat-raised-button >Close</button>
+    <!-- <button mat-raised-button [mat-dialog-close]="false">NO</button>
+    <button mat-raised-button color="primary" [mat-dialog-close]="true">YES</button> -->
+  </ng-container>
+</div>
+
+

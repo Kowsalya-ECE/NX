@@ -1,0 +1,38 @@
+<mat-toolbar color="accent">
+  <button mat-icon-button (click)="sidenav.toggle()" fxshow="true" fxHide.gt-sm color="primary">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <button mat-raised-button color="warn"><span class="tit"><span>Little </span> <span>Fashion</span></span></button>
+  <span class="menu-spacer"></span>
+  <div fxshow="true" fxHide.lt-md class="little">
+    <!-- <a mat-raised-button routerLink="/navbar/day1" id="underline" [ngClass]="isActive ? 'active' : 'inactive'" (click)="isActive=!isActive">Table</a> -->
+    <a mat-raised-button routerLink="/navbar/day1" color="primary" id="underline" routerLinkActive="button_color">Table</a>
+    <a mat-raised-button routerLink="/navbar/Employee-reg" color="primary" routerLinkActive="button_color">Employee-reg</a>
+    <a mat-raised-button routerLink="/navbar/table2" color="primay" routerLinkActive="button_color">Dynamic_Table</a>
+    <a mat-raised-button routerLink="/navbar/examples" color="primary" routerLinkActive="button_color">pipes and Snackbar</a>
+    <a mat-raised-button routerLink="/navbar/todo-list" color="primary" routerLinkActive="button_color">todo-list</a>
+    <a mat-raised-button routerLink="/navbar/snackbar" color="primary" routerLinkActive="button_color">Snackbar</a>
+    <a mat-raised-button routerLink="/navbar/signin" color="warn">Signin</a>
+    <a mat-raised-button (click)="onlogout()" color="warn">LogOut</a>
+  </div>
+  <span class="menu-spacer"></span>
+  <button mat-icon-button>
+    <mat-icon>person_outline</mat-icon></button>
+  <button mat-icon-button>
+    <mat-icon>shopping_bag</mat-icon></button>
+</mat-toolbar>
+
+<mat-sidenav-container fxFlexFill>
+  <mat-sidenav  #sidenav>
+    <mat-nav-list fxFlex="">
+      <a mat-button>home</a>
+      <a mat-button>products</a>
+      <a mat-button>story</a>
+      <a mat-button>FAQs</a>
+      <a mat-button>contacts</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-container>
+  <!-- <router-outlet></router-outlet> -->
+</mat-sidenav-container>
+<router-outlet></router-outlet>

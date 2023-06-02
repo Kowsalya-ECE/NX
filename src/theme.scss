@@ -1,0 +1,185 @@
+/* For use in src/lib/core/theming/_palette.scss */
+@use "@angular/material" as mat;
+@import '@angular/material/theming';
+@include mat-core();
+/* For use in src/lib/core/theming/_palette.scss */
+/* For use in src/lib/core/theming/_palette.scss */
+/* For use in src/lib/core/theming/_palette.scss */
+// $custom-primary: (
+//     50 : #ebfde3,
+//     100 : #ccfbb8,
+//     200 : #aaf889,
+//     300 : #88f559,
+//     400 : #6ff236,
+//     500 : #55f012,
+//     600 : #4eee10,
+//     700 : #44ec0d,
+//     800 : #3be90a,
+//     900 : #2ae505,
+//     A100 : #ffffff,
+//     A200 : #deffda,
+//     A400 : #b1ffa7,
+//     A700 : #9bff8d,
+//     contrast: (
+//         50 : #000000,
+//         100 : #000000,
+//         200 : #000000,
+//         300 : #000000,
+//         400 : #000000,
+//         500 : #000000,
+//         600 : #000000,
+//         700 : #000000,
+//         800 : #000000,
+//         900 : #000000,
+//         A100 : #000000,
+//         A200 : #000000,
+//         A400 : #000000,
+//         A700 : #000000,
+//     )
+// );
+
+
+$custom-primary: (
+    50 : #f1e1f3,
+    100 : #dbb4e2,
+    200 : #c482cf,
+    300 : #ac4fbc,
+    400 : #9a2aad,
+    500 : #88049f,
+    600 : #800397,
+    700 : #75038d,
+    800 : #6b0283,
+    900 : #580172,
+    A100 : #e5a1ff,
+    A200 : #d76eff,
+    A400 : #c93bff,
+    A700 : #c221ff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+
+
+
+$custom-purple: (
+    50 : #ede1e7,
+    100 : #d3b4c4,
+    200 : #b5829d,
+    300 : #975075,
+    400 : #812b58,
+    500 : #6b053a,
+    600 : #630434,
+    700 : #58042c,
+    800 : #4e0325,
+    900 : #3c0118,
+    A100 : #ff729c,
+    A200 : #ff3f78,
+    A400 : #ff0c54,
+    A700 : #f10047,
+    contrast: (50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #ffffff,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+/* For use in src/lib/core/theming/_palette.scss */
+$custom-accent: (
+    50 : #e0e0e0,
+    100 : #b3b3b3,
+    200 : #808080,
+    300 : #4d4d4d,
+    400 : #262626,
+    500 : #000000,
+    600 : #000000,
+    700 : #000000,
+    800 : #000000,
+    900 : #000000,
+    A100 : #a6a6a6,
+    A200 : #8c8c8c,
+    A400 : #737373,
+    A700 : #666666,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+
+
+$custom-warn: (
+    50 : #e5f4f3,
+    100 : #bee4e1,
+    200 : #93d3cd,
+    300 : #67c1b8,
+    400 : #47b3a9,
+    500 : #26a69a,
+    600 : #229e92,
+    700 : #1c9588,
+    800 : #178b7e,
+    900 : #0d7b6c,
+    A100 : #adfff3,
+    A200 : #7affec,
+    A400 : #47ffe4,
+    A700 : #2dffe0,
+    contrast: (50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+// @include angular-material-typography($custom-typography);
+$app-primary: mat-palette($custom-primary);
+$app-accent: mat-palette($custom-accent);
+$app-warn: mat-palette($custom-warn);
+$app-purple: mat-palette($custom-purple);
+$app-theme: mat-light-theme($app-primary, $app-accent,$app-warn);
+
+// Include the theme styles for only specified components.
+@include angular-material-theme($app-theme);

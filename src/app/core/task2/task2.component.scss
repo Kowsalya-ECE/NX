@@ -1,0 +1,180 @@
+.task2 {
+    background-color: gainsboro;
+    padding: 30px;
+}
+
+.outer_box {
+    min-width: 80%;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.Box1 {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.Box2 {
+    width: 100%;
+    background-color: blue;
+    border-radius: 0 10px 10px 0;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+.info2 .in {
+    color: rgba(184, 177, 177, 0.952);
+}
+
+.info2 .pp {
+    color: white;
+    margin-top: 0;
+}
+
+.sign {
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.welcome {
+    margin-left: 86px;
+}
+
+.welcome button {
+    width: 300px;
+    height: 50px;
+}
+
+.welcome p {
+    color: gray;
+}
+
+.span {
+    font-size: 30px;
+    font-weight: 500;
+    color: black;
+}
+
+.welcome p {
+    margin-top: 46px;
+    font-size: 13px;
+}
+
+.form {
+    width: 300px;
+    height: 45px;
+    font-size: 13px;
+}
+
+.signup {
+    border-bottom: 1px solid black;
+    border-color: gray;
+    color: gray;
+    height: 10px;
+    width: 295px;
+    text-align: center;
+}
+
+.signup span {
+    background-color: white;
+    padding: 0 10px;
+
+}
+
+img {
+    height: 40px;
+    width: 40px;
+}
+
+.img button {
+    width: 75px;
+    height: 45px;
+    margin-left: 20px;
+}
+
+mat-icon {
+    color: gray;
+    font-size: medium;
+    margin-top: 10px;
+}
+
+.symbol {
+    font-size: medium;
+    color: gray;
+    margin-right: 20px;
+}
+
+.format_quote {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    background-color: aqua;
+    margin-top: 150px;
+    margin-left: 75px;
+    border-radius: 20px;
+}
+
+.format_quote mat-icon {
+    font-size: 30px;
+    margin-bottom: 30px;
+    transform: rotate(180deg);
+    margin-left: 8px;
+}
+
+.Box2 p {
+    font-size: 60px;
+    font-weight: 500;
+    color: white;
+    line-height: 70px;
+    margin-top: 200px;
+    margin-left: 80px;
+}
+
+.para p {
+    font-size: 14px;
+    color: rgba(184, 177, 177, 0.952);
+    line-height: 30px;
+    font-weight: lighter;
+}
+
+.para {
+    margin-top: -150px;
+    margin-left: 75px;
+}
+
+.info p {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: lighter;
+}
+
+.info {
+    margin-right: 30px;
+}
+
+.info img {
+    border-radius: 20px;
+}
+
+.line1 {
+    position: absolute;
+    height: 370px;
+    margin: 180px 0 0 90px;
+    border-left: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.line2 {
+    position: absolute;
+    width: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+    margin: 415px 90px;
+}
+
+// mat-form-field {
+//     min-width: 80%;
+
+// }

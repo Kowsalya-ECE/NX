@@ -1,0 +1,79 @@
+<div class="mat-display-4">hello</div>
+<div class="mat-display-3">hello</div>
+<div class="mat-display-2">hello</div>
+<div class="mat-display-1">hello</div>
+<!-- <router-outlet></router-outlet> -->
+<br>
+<h1>buttons</h1>
+<button mat-button>select</button>
+<button mat-raised-button>select</button>
+<button mat-flat-button>select</button>
+<button mat-stroked-button>select</button><br><br>
+<button mat-icon>icon button</button><br>
+<button mat-fab>fab button</button><br>
+<button mat-mini-fab>mini fab button</button>
+
+<br>
+<br>
+<h1>button toggles<h1>
+    <mat-button-toggle #togglebtn checked disableRipple>TOGGLE</mat-button-toggle>
+    {{togglebtn.checked}}
+     <br>
+     <br>
+    <mat-button-toggle-group #toggle="matButtonToggleGroup" multiple="">
+   <mat-button-toggle value="html">HTML</mat-button-toggle>
+   <mat-button-toggle value="css">CSS</mat-button-toggle>
+   <mat-button-toggle value="javascript">JAVASCRIPT</mat-button-toggle>
+   <mat-button-toggle value="angular">ANGULAR</mat-button-toggle>
+   </mat-button-toggle-group>
+    {{toggle.value}}
+    <br><br>
+    <h1>icons</h1>
+    <mat-icon>room</mat-icon>
+    <br><br>
+    <span matBadge="1"><mat-icon>people</mat-icon></span><br><br>
+    <span matBadge="1" matBadgePosition="below after"><mat-icon>people</mat-icon></span><br><br>
+    <span matBadge="1" matBadgePosition="below before"><mat-icon>people</mat-icon></span><br><br>
+    <span matBadge="1" matBadgePosition="above before"><mat-icon>people</mat-icon></span><br><br>
+
+    <h1>progress spinner</h1>
+    <mat-progress-spinner value="100"></mat-progress-spinner>
+    <mat-spinner></mat-spinner>
+    <br><br>
+
+    <h1>navbar</h1>
+    <mat-toolbar color="warn" class="navbar">
+        <span>nav bar</span> 
+        <div>
+            <span>home</span>
+            <span>story</span>
+            <span>contact</span>
+            <span>help</span>
+        </div>
+       </mat-toolbar>
+       <br>
+       <mat-sidenav-container>
+       <mat-sidenav [(opened)]="opened">bar</mat-sidenav>
+       <mat-sidenav-content>home
+       <button (click)="opened=!opened">toggle opened</button>
+    </mat-sidenav-content>
+       </mat-sidenav-container>
+       <br><br>
+
+       <h1>menu</h1>
+       <br>
+       <mat-menu #menuapp="matMenu">
+        <button mat-menu-item [matMenuTriggerFor]="submenu">welcom</button>
+        <button mat-menu-item [matMenuTriggerFor]="submenu2">thank you</button>
+       </mat-menu>
+       <button mat-raised-button [matMenuTriggerFor]="menuapp">menu</button>
+    <mat-menu #submenu="matMenu">
+       <button mat-menu-item>hii</button>
+       <button mat-menu-item>how are you</button>
+       <button mat-menu-item>thankyou</button>
+    </mat-menu>
+       <mat-menu #submenu2="matMenu">
+        <button mat-menu-item>byee</button>
+        <button mat-menu-item>see you</button>
+        <button mat-menu-item>thankyou</button>
+    </mat-menu>

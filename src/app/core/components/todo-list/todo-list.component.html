@@ -1,0 +1,14 @@
+<!-- <h1>Todo-list</h1>
+<div class="container">
+    <div class="page-container">
+        <label for="search-term">Search</label>
+        <input placeholder="Enter term" (input)="updatesearch($event)" id="search-term">
+        <div *ngFor="let result of result" [innerHTML]="result.text | highlightPipes: searchterm"></div>
+    </div>
+</div> -->
+
+<div class="container" fxLayoutAlign="center center">
+    <span  class="span1" fxLayoutAlign="center center">₹</span>
+    <input  appInput class="inputbox" type="text">
+    <span  class="span2" fxLayoutAlign="center center">/Month</span>
+</div>

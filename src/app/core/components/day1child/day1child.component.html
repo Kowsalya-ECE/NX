@@ -1,0 +1,18 @@
+<p>{{Title}}</p>
+<div>
+  {{Description}}
+</div>
+<ng-container *ngIf="ActionArray && ActionArray.length">
+  <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+  <mat-menu #menu="matMenu">
+   <button mat-menu-item *ngFor="let item of ActionArray">{{item?.label}}</button>
+   </mat-menu>
+  </ng-container>
+<p>{{Name}} {{title}}</p>
+<!-- <ng-component></ng-component> -->
+
+<!-- <button mat-raised-button color="primary">Primary</button>
+    <button mat-icon-button color="warn" aria-label="Example icon button with a heart icon">
+        <mat-icon>favorite</mat-icon>
+      </button>  -->
+      
